@@ -161,12 +161,12 @@ function AddPatient() {
                 <h3 style={{ fontVariant: "small-caps" }}>Patient details</h3>
               </center>
               <Form.Group className="mb-3" controlId="formBasicId">
-                <Form.Label>Aadhaar Number</Form.Label>
+                <Form.Label>ID Number</Form.Label>
                 <Form.Control type="number" placeholder="" onChange={updateAadhaar} />
                 {errors.aadhaar === "t" ? (
                   <span style={{ color: "red", fontSize: "12px", marginLeft: "8px" }}>
                     {" "}
-                    <BiErrorCircle /> Aadhaar number must be 12 digits
+                    <BiErrorCircle /> ID number must be 12 digits
                   </span>
                 ) : (
                   <></>
